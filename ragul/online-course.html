@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="style1.css">
+</head>
+<body>
+     <div class="head">
+      <b>Online Courses</b>
+    </div>
+     <div class="python">
+      <a href="register.html">  <h2>Python</h2></a>
+        <div class="pro"  onclick="showDescription('Python')">
+           <a href="python.html"  target="_self"><h3>View Profile</h3></a>
+        </div>
+    </div>
+     <div class="java">
+       <a href="register.html"> <h2>Java</h2></a>
+       <div class="pro">
+        <a href="java.html" target="_self"><h3>View Profile</h3></a>
+    </div>
+     </div>   
+     <div class="java">
+      <a href="register.html">  <h2>javascript</h2></a>
+      <div class="pro">
+        <a href="#"><h3>View Profile</h3></a>
+    </div>
+     </div>
+     <div class="script">
+       <a href="register.html"> <h2>HTML and CSS</h2></a>
+        <div class="pro">
+          <a href="#"><h3>View Profile</h3></a>
+    </div>
+
+     </div>
+     <div class="cloud">
+      <a href="register.html">  <h2>Cloud Computing</h2></a>
+      <div class="pro">
+        <a href="#"><h3>View Profile</h3></a>
+    </div>
+     </div>
+     <div class="machine">
+      <a href="register.html">  <h2>Machine Learning</h2></a>
+      <div class="pro">
+        <a href="#"><h3>View Profile</h3></a>
+    </div>
+     </div>
+     <div class="deep">
+      <a href="register.html">  <h2>Deep Learning</h2></a>
+      <div class="pro">
+        <a href="#"><h3>View Profile</h3></a>
+    </div>
+     </div>
+     <div class="react">
+       <a href="register.html"> <h2>React</h2></a>
+       <div class="pro">
+        <a href="#"><h3>View Profile</h3></a>
+    </div>
+     </div>
+     <div class="db">
+      <a href="register.html">  <h2>Mongo DB</h2></a>
+      <div class="pro">
+        <a href="#"><h3>View Profile</h3></a>
+    </div>
+     </div>
+     <button class="back"onclick="babtn()">Back</button>
+     <div class="description" id="courseDescription">
+      <h3 id="descriptionTitle"></h3>
+      <p id="descriptionText"></p>
+  </div>
+  <script>
+    const descriptions = {
+        'Python': 'Python is a versatile programming language known for its simplicity and readability'
+    };
+    function showDescription(pro) {
+            document.getElementById('descriptionTitle').innerText = pro;
+            document.getElementById('descriptionText').innerText = descriptions[pro];
+            document.getElementById('courseDescription').style.display = 'block';
+        }
+
+        function babtn() {
+            window.open("student.html");
+        }
+    </script>
+</body>
+</html>

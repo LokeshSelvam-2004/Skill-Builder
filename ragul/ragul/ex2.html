@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 12px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .register{
+            color: Red;
+            font-size:15px;
+            background-color: lightgoldenrodyellow;
+            font-size: 22px;
+            border-color: red ;
+        }
+        tr{
+            background-color:rgb(10, 198, 245);
+        }
+        td{
+            padding-left: 5px;
+        }
+        .btn{
+            display:flex;
+            justify-content: space-between;
+        }
+        
+    </style>
+</head>
+<body>
+    <table border=1 Cellspacing="1" align="center" height="400" width="400">
+        <tr>
+            <td class="register" colspan="2"><b>Registration Form</b></td>
+        </tr>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>Enter Address</td>
+            <td><textarea type="address"></textarea></td>
+        </tr>
+        <tr>
+            <td>Select Game</td>
+            <td>
+                <input type="checkbox">Hockey<br>
+                <input type="checkbox">Football<br>
+                <input type="checkbox">Badminton<br>
+                <input type="checkbox">Cricket<br>
+                <input type="checkbox">volleyball<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio">Male
+                <input type="radio">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Select ur age</td>
+            <td><select type="dropdown">
+                <option value="Select">Select</option>
+                <option value="1-10 years">1-10 years </option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Select Photo</td>
+            <td><input type="file" name="Browse..."></td>
+        </tr>
+        <tr>
+            <td colspan="2"  class="btn" >
+                <button>Click Me</button> 
+                <button>Reset</button> 
+                <button>Submit</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
